@@ -1,0 +1,26 @@
+	<textarea type="text" [(ngModel)]="Fname" name="fname" placeholder="First name.."></textarea>
+ 	<textarea [(ngModel)]="Lname" name="lname" placeholder="Last name.."></textarea>
+ 	<textarea [(ngModel)]="Phone" name="phone" placeholder="Phone number.."></textarea>
+ 	<textarea [(ngModel)]="Mobile" name="mobile" placeholder="Mobile number.."></textarea>
+ 	<textarea [(ngModel)]="email" name="email" placeholder="E-mail.."></textarea>
+ 	<textarea [(ngModel)]="address" name="address" placeholder="Adress.."></textarea> 
+
+	<input type="submit" value="Add" (click)="addPost()"> 
+
+<ul *ngFor="let post of posts | async"> 
+  <li (click)="getPost(post.id)"> 
+     <strong>{{ post.data.Fname }} {{ post.data.Lname }} (<a href="#" (click)="deletePost(post.id)">delete</a>) (<a href="#!view"(click)="viewPost(post.id)">view</a>)</strong>
+ </li>
+</ul>
+<ul>
+<li>
+   	<p><a>Name:</a> {{ (post | async)?.Fname }}</p>
+	<p><a>Last name:</a> {{ (post | async)?.Lname }}</p>
+	<p><a>Phone:</a> {{ (post | async)?.Phone }}</p>
+	<p><a>Mobile number:</a> {{ (post | async)?.Mobile }}</p>
+	<p><a>E-mail:</a> {{ (post | async)?.email }}</p>
+	<p><a>Address:</a> {{ (post | async)?.address }}</p>
+</li>
+</ul>
+ 	<h1>A specific post:</h1>
+<!-- Modal -->
