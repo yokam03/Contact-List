@@ -11,12 +11,13 @@ import  { FormsModule } from '@angular/forms';
 import { ListComponent } from './list/list.component';
 
 var firebaseConfig = {
-	 apiKey: "AIzaSyA8w6cEY7cXMj-x-WIuX_gRHoDKO6dNGag",
-    authDomain: "firestore-2b119.firebaseapp.com",
-    databaseURL: "https://firestore-2b119.firebaseio.com",
-    projectId: "firestore-2b119",
-    storageBucket: "firestore-2b119.appspot.com",
-    messagingSenderId: "876693099099"
+  apiKey: "AIzaSyBAhLGRTvGgKwjDWm4sVluGDF_7N4CJRJE",
+  authDomain: "contact-list-3c442.firebaseapp.com",
+  databaseURL: "https://contact-list-3c442.firebaseio.com",
+  projectId: "contact-list-3c442",
+  storageBucket: "contact-list-3c442.appspot.com",
+  messagingSenderId: "153547902293"
+
 
 
 };
